@@ -16,6 +16,9 @@
         "ecommerceappb5769943PostConfirmation": {
           "GROUP": "Admin"
         }
+      },
+      "auth": {
+        "ecommerceappb5769943": {}
       }
     }
   }
