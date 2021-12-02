@@ -42,5 +42,11 @@
         ]
       }
     }
+  },
+  "storage": {
+    "producttable": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }
