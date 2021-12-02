@@ -20,6 +20,9 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
 
+const AWS = require('aws-sdk')
+const { v4: uuid } = require('uuid')
+
 // declare a new express app
 var app = express()
 app.use(bodyParser.json())
