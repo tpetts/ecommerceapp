@@ -98,13 +98,14 @@ app.use(function(req, res, next) {
  * Example get method *
  **********************/
 
-app.get('/products', function(req, res) {
-  // Add your code here
-  
-
-
-  res.json({success: 'get call succeed!', url: req.url});
-});
+ app.get('/products', async function(req, res) {
+  try {
+    const data = await getItems()
+    res.json({ data: data })
+  } catch (err) {
+    res.json({ error: err })
+  }
+})
 
 app.get('/products/*', function(req, res) {
   // Add your code here
