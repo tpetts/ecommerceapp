@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Router from './Router';
+import 'antd/dist/antd.css';
+import Amplify from '@aws-amplify';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import config from './aws-exports';
+Amplify.configure(config);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+  <Router />, 
   document.getElementById('root')
 );
 
